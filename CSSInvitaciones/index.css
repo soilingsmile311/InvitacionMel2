@@ -1,0 +1,188 @@
+*{
+    box-sizing:border-box;
+}
+
+body {
+    margin: 0;
+}
+
+h1{
+    font-family: "Fleur De Leah", cursive;
+    font-size: 2.5em;
+    text-align: center;
+    color: black; 
+
+    text-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 40px #00f;
+    
+    padding: 0;
+    margin: 0;
+}
+
+.portada{
+    background-image: url("../img/portada.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#Titulo{
+    padding-top: 32vh;
+    font-size: 4em;
+}
+
+#mis{
+    margin: 0 auto;
+    padding-top: 35vh;
+}
+
+#xv{
+    margin: 0 auto;
+    margin-left: 30%;
+}
+
+#Nombre{
+    padding-bottom: 10vh;
+}
+
+#Fecha{
+
+}
+
+.fondo{
+    margin: 0;
+    background-color: transparent;
+
+    /*background-image: url("../img/fondo.png");
+    background-size: contain;
+    background-repeat: space repeat;*/
+
+    opacity: 0.93;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+
+}
+
+.familiares{
+    display: flex;
+    justify-content: center;
+}
+
+.familiares > .padres{
+    margin-right: 10%;
+}
+
+.ribbon {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.ribbon {
+    --s: 1.8em; /* the ribbon size */
+    --d: .8em;  /* the depth */
+    --c: .8em;  /* the cutout part */
+
+    padding: 0 calc(var(--s) + .5em) var(--d);
+    line-height: 1.8;
+    background:
+    conic-gradient(at left  var(--s) bottom var(--d),
+    #0000 25%,#0008 0 37.5%,#0004 0) 0   /50% 100% no-repeat,
+    conic-gradient(at right var(--s) bottom var(--d),
+    #0004 62.5%,#0008 0 75%,#0000 0) 100%/50% 100% no-repeat;
+    
+    clip-path: polygon(0 var(--d), var(--s) var(--d),var(--s) 0,calc(100% - var(--s)) 0,calc(100% - var(--s)) var(--d),100% var(--d),calc(100% - var(--c)) calc(50% + var(--d)/2),100% 100%,calc(100% - var(--s) - var(--d)) 100%,calc(100% - var(--s) - var(--d)) calc(100% - var(--d)),calc(var(--s) + var(--d)) calc(100% - var(--d)),calc(var(--s) + var(--d)) 100%,0 100%,var(--c) calc(50% + var(--d)/2));
+    background-color: #b68d2c; /* the main color */
+    opacity: .85;
+    width: fit-content;
+}
+
+.labels {
+
+    font-size: 20px;
+    font-weight: bold;
+    color: white; 
+    font-family: "Fleur De Leah", cursive;
+}
+
+.separador{
+    opacity: .80;
+    margin-top: 4vh;
+}
+
+.map > iframe {
+    height: 10vh; 
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+
+h5{
+    font-size: 1.2em;
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 0 0 20px 2f2f92, 0 0 40px #00f, 0 0 40px 2f2f92;
+}
+
+.vestimenta{
+    margin: 0 auto;
+}
+
+.vestimenta > h5{
+    margin-bottom: 0;
+}
+
+.vestimenta > .contenido{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.vestimenta > .contenido > .texto{
+    width: 40%;
+}
+
+.vestimenta > .contenido > .texto > h4{
+    font-size: 2.3em;
+    margin-bottom: 0;
+}
+
+.vestimenta > .contenido > .texto > p{
+    font-size: 1em;
+    margin: 0;
+}
+
+.vestimenta > .contenido > img{
+    display: inline-block;
+    width: 30%;
+}
+
+.mesaRegalos > .contenido {
+    display: flex;
+    flex-direction: column;
+}
+
+.mesaRegalos > .contenido > div{
+    margin: 0 auto;
+}
+
+.mesaRegalos > .contenido > div > img{
+    width: 20%;
+}
+
+.mesaRegalos > .contenido > div > a{
+    position: relative;
+    bottom: 30px;
+}
+
+.fondo > *{
+    font-family: "Fleur De Leah", cursive !important;
+    text-align: center;
+    color: white; 
+    text-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 40px #00f;
+}
+
