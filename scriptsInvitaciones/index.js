@@ -19,26 +19,8 @@ function actualizarTiempo() {
     
 
 }
-console.log("hola");
-setInterval(actualizarTiempo, 1000);
-actualizarTiempo();
-
-
-/*const teamMembers = [
-	{ name: "Emily Kim", role: "Founder" },
-	{ name: "Michael Steward", role: "Creative Director" },
-	{ name: "Emma Rodriguez", role: "Lead Developer" },
-	{ name: "Julia Gimmel", role: "UX Designer" },
-	{ name: "Lisa Anderson", role: "Marketing Manager" },
-	{ name: "James Wilson", role: "Product Manager" }
-];*/
 
 const cards = document.querySelectorAll(".card");
-
-/*const dots = document.querySelectorAll(".dot");
-const memberName = document.querySelector(".member-name");
-const memberRole = document.querySelector(".member-role");*/
-
 const leftArrow = document.querySelector(".nav-arrow.left");
 const rightArrow = document.querySelector(".nav-arrow.right");
 let currentIndex = 0;
@@ -77,20 +59,6 @@ function updateCarousel(newIndex) {
 		}
 	});
 
-	/*dots.forEach((dot, i) => {
-		dot.classList.toggle("active", i === currentIndex);
-	});*/
-
-	/*memberName.style.opacity = "0";
-	memberRole.style.opacity = "0";
-
-	setTimeout(() => {
-		memberName.textContent = teamMembers[currentIndex].name;
-		memberRole.textContent = teamMembers[currentIndex].role;
-		memberName.style.opacity = "1";
-		memberRole.style.opacity = "1";
-	}, 300);*/
-
 	setTimeout(() => {
 		isAnimating = false;
 	}, 800);
@@ -103,12 +71,6 @@ leftArrow.addEventListener("click", () => {
 rightArrow.addEventListener("click", () => {
 	updateCarousel(currentIndex + 1);
 });
-
-/*dots.forEach((dot, i) => {
-	dot.addEventListener("click", () => {
-		updateCarousel(i);
-	});
-});*/
 
 cards.forEach((card, i) => {
 	card.addEventListener("click", () => {
@@ -149,4 +111,5 @@ function handleSwipe() {
 	}
 }
 
+actualizarTiempo();
 updateCarousel(0);

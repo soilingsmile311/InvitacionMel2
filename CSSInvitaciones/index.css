@@ -128,10 +128,6 @@ h5{
     padding: 1.5vh 0 5vh 0;
 }
 
-.pases{
-    background-color: #e3b3c0;
-}
-
 .map > p{
     font-family: "Edu AU VIC WA NT Pre", Bold;
     font-optical-sizing: auto;
@@ -219,6 +215,86 @@ h5{
     font-size: 13px;
 }
 
+/*PASES SELECTORS*/
+.pases {
+    margin-top: 5vh;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+.pases > h2{
+    color: black;
+    text-align: center;
+    margin-bottom: 1.5vh;
+}
+
+form {
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    align-items: center;      /* centers vertically (optional) */
+    width: 100%;
+    gap: 20px;                /* spacing between options */
+    background: transparent;      /* optional, just for visibility */
+}
+
+/* Each option container */
+label {
+    display: inline-flex;
+    flex-direction: column; /* stack circle above label text */
+    align-items: center;
+    cursor: pointer;
+    font-family: "Fleur De Leah", cursive;
+}
+
+/* Circular "checkbox" (styled radio button) */
+input[type="radio"].checkbox-style {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 28px;
+    height: 28px;
+    border: 2px solid #555;
+    border-radius: 50%;
+    margin-bottom: 6px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+/* Hover effect */
+input[type="radio"].checkbox-style:hover {
+    border-color: #000; 
+}
+
+/* When selected (filled circle) */
+input[type="radio"].checkbox-style:checked::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+/* Centered submit button styling */
+button[type="submit"] {
+    margin-top: 2vh;
+    background-color: #ffd3d5;
+    color: black;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #fdeff2;
+}
+
 /*Carrousel*/
 .about-title {
 	font-size: 7.5rem;
@@ -248,7 +324,7 @@ h5{
 	height: 450px;
 	position: relative;
 	perspective: 1000px;
-	margin-top: 80px;
+	margin-top: 1vh;
 }
 
 .carousel-track {
