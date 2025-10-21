@@ -229,7 +229,7 @@ h5{
     margin-bottom: 1.5vh;
 }
 
-form {
+.radioContainer {
     display: flex;
     justify-content: center; /* centers horizontally */
     flex-wrap: wrap;           /* permite que los elementos bajen si no caben */
@@ -237,6 +237,27 @@ form {
     width: 100%;
     gap: 20px;                /* spacing between options */
     background: transparent;      /* optional, just for visibility */
+}
+
+/*Textbox para nombre*/
+#nombreInvitado {
+    font-family: "Agbalumo", system-ui;
+    color: black;
+    font-size: 1.2rem;
+    border-radius: 0.2rem;
+    background-color: #ffd3d5;
+    border: none;
+    width: 80%;
+    display: block;
+    border-bottom: 0.3rem solid transparent;
+    transition: all 0.3s;
+    margin: .8vh auto;
+}
+
+#nombreInvitado::placeholder {
+    font-family: "Agbalumo", system-ui;
+    opacity: 0.5;
+    color: black;
 }
 
 /* Each option container */

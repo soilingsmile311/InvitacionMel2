@@ -23,6 +23,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dynalight&family=Edu+AU+VIC+WA+NT+Pre:wght@600&display=swap" rel="stylesheet">
 
+    <script type="module" src="scriptsInvitaciones/database.js"></script>
+
     <title>Mis XV Michelle</title>
 </head>
 <body>
@@ -127,45 +129,44 @@
     <!-- Asistencias -->
     <div class="pases">
         <h2>Pases</h2>
-        <form>
-            <label>
-                <input type="radio" name="choice" class="checkbox-style" value="1">
-                1
-            </label>
-            <label>
-                <input type="radio" name="choice" class="checkbox-style" value="1">
-                1
-            </label>
-            <label>
-                <input type="radio" name="choice" class="checkbox-style" value="2">
-                2
-            </label>
-            <label>
-                <input type="radio" name="choice" class="checkbox-style" value="3">
-                3
-            </label>
-            <label>
-                <input type="radio" name="choice" class="checkbox-style" value="4">
-                4
-            </label>
-            <label>
-                <input type="radio" name="choice" class="checkbox-style" value="5">
-                5
-            </label>
-            <label>
-                <input type="radio" name="choice" class="checkbox-style" value="6">
-                6
-            </label>
-            <label>
-                <input type="radio" name="choice" class="checkbox-style" value="7">
-                7
-            </label>
-            <label>
-                <input type="radio" name="choice" class="checkbox-style" value="8">
-                8
-            </label>
+        <form id="pasesFormulario">
+            <input type="text" id="nombreInvitado" name="nombreInvitado" placeholder="Ingrese su nombre:">
+            <div class="radioContainer">
+                <label>
+                    <input type="radio" name="choice" class="checkbox-style" value="1">
+                    1
+                </label>
+                <label>
+                    <input type="radio" name="choice" class="checkbox-style" value="2">
+                    2
+                </label>
+                <label>
+                    <input type="radio" name="choice" class="checkbox-style" value="3">
+                    3
+                </label>
+                <label>
+                    <input type="radio" name="choice" class="checkbox-style" value="4">
+                    4
+                </label>
+                <label>
+                    <input type="radio" name="choice" class="checkbox-style" value="5">
+                    5
+                </label>
+                <label>
+                    <input type="radio" name="choice" class="checkbox-style" value="6">
+                    6
+                </label>
+                <label>
+                    <input type="radio" name="choice" class="checkbox-style" value="7">
+                    7
+                </label>
+                <label>
+                    <input type="radio" name="choice" class="checkbox-style" value="8">
+                    8
+                </label>
+            </div>
+            <button type="submit">Confirmar Aquí</button>
         </form>
-        <button type="submit">Confirmar Aquí</button>
     </div>
 
     <img src="img/separadorSinfondo2.png" alt="" class="separador">
@@ -190,23 +191,5 @@
     </div>
 
     <script src="scriptsInvitaciones/index.js"></script>
-    
-    <script>
-        window.addEventListener('DOMContentLoaded', () => {
-        const audio = document.getElementById("musicaFondo");
-        const playBtn = document.getElementById("playBtn");
-
-        audio.play().catch(() => {
-            playBtn.classList.remove("hidden");
-        });
-
-        playBtn.addEventListener("click", () => {
-            audio.play().then(() => {
-            playBtn.classList.add("hidden");
-            setTimeout(() => playBtn.style.display = "none", 400);
-            }).catch(err => console.log(err));
-        });
-        });
-    </script>
 </body>
 </html>
