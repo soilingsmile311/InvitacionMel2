@@ -50,7 +50,6 @@ h1{
 
 #xv{
     margin: 0 auto;
-    margin-left: 30%;
     font-size: 3.5em;
 }
 
@@ -59,7 +58,7 @@ h1{
 }
 
 #Nombre{
-    padding-top: 10vh;
+    padding-top: 1vh;
     padding-bottom: 2vh;
     font-size: 4em;
 }
