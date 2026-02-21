@@ -8,7 +8,7 @@ function actualizarTiempo() {
     console.log("actualizar");
     let dias, horas, minutos;
 
-    let tiempoRestante = new Date("2025-12-07 00:00:00");
+    let tiempoRestante = new Date("2026-03-28 00:00:00");
     let ahora = new Date();
 
     let diferencia = Math.abs(ahora - tiempoRestante);
