@@ -4,22 +4,6 @@ const rightArrow = document.querySelector(".nav-arrow.right");
 let currentIndex = 0;
 let isAnimating = false;
 
-window.addEventListener('DOMContentLoaded', () => {
-	const audio = document.getElementById("musicaFondo");
-	const playBtn = document.getElementById("playBtn");
-
-	audio.play().catch(() => {
-		playBtn.classList.remove("hidden");
-	});
-
-	playBtn.addEventListener("click", () => {
-		audio.play().then(() => {
-		playBtn.classList.add("hidden");
-		setTimeout(() => playBtn.style.display = "none", 400);
-		}).catch(err => console.log(err));
-	});
-});
-
 function actualizarTiempo() {
     console.log("actualizar");
     let dias, horas, minutos;
