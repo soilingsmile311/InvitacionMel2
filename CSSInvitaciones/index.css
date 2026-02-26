@@ -138,10 +138,16 @@ h5{
 
 .fondoParte2{
     text-align: center;
-     background-image: linear-gradient(to right, #f9e7f9 0%,#fff2e0 100%);
+    background-image: url("../img/fondoParte2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 1.5vh 0 5vh 0;
 }
-
+.separadorSegundo{
+    margin: 0;
+    width: 100%;
+    opacity: 1 !important;
+}
 .negritas{
     font-weight: bold m !important;
 }
@@ -226,7 +232,7 @@ h5{
 .countdown > div > span{
     font-family: "Dynalight", cursive;
     font-size: 4em;
-    color: #EBEBE9;
+    color: #e9d08b;
 }
 
 #mesaRegaloBoton{
